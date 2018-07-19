@@ -16,8 +16,8 @@ class ConcurrentListOpt final : public ConcurrentList<T> {
 public:
 
     ConcurrentListOpt() {
-        head = new ListNode<T>(INT_MIN);
-        head->next = new ListNode<T>(INT_MAX);
+        head = new ListNode<T>(std::numeric_limits<T>::min());
+        head->next = new ListNode<T>(std::numeric_limits<T>::max());
     }
     ~ConcurrentListOpt() {
         ListNode<T> *prev, *curr;
