@@ -14,8 +14,8 @@ $ make run
 The output is list elements and list length
 
 ## TODO
-- fix bugs: initialize dummy head and tail node using user provided min max value for type T
-- use more sophisticated rand generator
-- control each operation frequency
-- count each operation numbers
-- implement lock-free concurrent list
+- [x] fix bugs: initialize dummy head and tail node using user provided min max value for type T
+- [ ] use more sophisticated rand generator
+- [ ] control each operation frequency
+- [ ] count each operation numbers
+- [ ] implement lock-free concurrent list
